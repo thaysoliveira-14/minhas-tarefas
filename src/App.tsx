@@ -1,10 +1,17 @@
-import EstiloGlobal from '../src/styles/index'
+import { EstiloGlobal, Container } from '../src/styles/index'
+import { BarraLateral } from './containers/BarraLateral'
+import { ListaDeTarefas } from './containers/ListaDeTarefas'
 
 function App() {
-  return <div className="App">
-    <EstiloGlobal />
-    <h1>Olá</h1>
-  </div>
+    return (
+        <>
+            <EstiloGlobal />
+            <Container>
+                <BarraLateral />
+                <ListaDeTarefas />
+            </Container>
+        </>
+    )
 }
 
 export default App
